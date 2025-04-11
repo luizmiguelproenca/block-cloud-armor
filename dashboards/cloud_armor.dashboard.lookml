@@ -7,7 +7,7 @@
   elements:
   - title: Daily Traffic Bytes
     name: Daily Traffic Bytes
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_area
     fields: [requests.sum_responseSize, requests.cache_hit_and_cache_miss, requests.timestamp_date]
@@ -76,7 +76,7 @@
     height: 6
   - title: Request Count and Size by User Agent
     name: Request Count and Size by User Agent
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.http_request__user_agent, requests.count, requests.sum_responseSize]
@@ -142,7 +142,7 @@
     height: 8
   - title: Request Count and Response Size by Source IP
     name: Request Count and Response Size by Source IP
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.http_request__remote_ip, requests.count, requests.sum_responseSize]
@@ -209,7 +209,7 @@
     height: 8
   - title: Request Count and Response Size by HTTP Request URL
     name: Request Count and Response Size by HTTP Request URL
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.http_request__request_url, requests.count, requests.sum_responseSize]
@@ -276,7 +276,7 @@
     height: 10
   - title: Top User Agents by Requests
     name: Top User Agents by Requests
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.http_request__user_agent, requests.count]
@@ -342,7 +342,7 @@
     height: 6
   - title: Top HTTP Request URLs by Requests
     name: Top HTTP Request URLs by Requests
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.http_request__request_url, requests.count]
@@ -407,7 +407,7 @@
     height: 6
   - title: 'Top HTTP Request URLs by Response Size '
     name: 'Top HTTP Request URLs by Response Size '
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.http_request__request_url, requests.sum_responseSize]
@@ -481,7 +481,7 @@
     height: 1
   - title: Top Status Details
     name: Top Status Details
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.count, requests.jsonpayload_type_loadbalancerlogentry__statusdetails,
@@ -552,7 +552,7 @@
     height: 4
   - title: Event Detail
     name: Event Detail
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.http_request__request_url, requests.receive_timestamp_time,
@@ -613,7 +613,7 @@
     height: 10
   - title: Top Referers by Requests
     name: Top Referers by Requests
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.count, requests.http_request__referer]
@@ -679,7 +679,7 @@
     height: 5
   - title: Request Count and Response Size by Referer
     name: Request Count and Response Size by Referer
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.count, requests.http_request__referer, requests.sum_responseSize]
@@ -745,7 +745,7 @@
     height: 7
   - title: Top Rules
     name: Top Rules
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_pie
     fields: [requests.count, requests.jsonpayload_type_loadbalancerlogentry___type]
@@ -807,7 +807,7 @@
     height: 6
   - title: Request Count and Response Size by Rule
     name: Request Count and Response Size by Rule
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.count, requests.jsonpayload_type_loadbalancerlogentry___type,
@@ -874,7 +874,7 @@
     height: 5
   - title: Allowed Events
     name: Allowed Events
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: single_value
     fields: [requests.count]
@@ -963,7 +963,7 @@
     height: 3
   - title: Request Count and Response Size by Configured Action
     name: Request Count and Response Size by Configured Action
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.count, requests.jsonpayload_type_loadbalancerlogentry__enforcedsecuritypolicy__configuredaction,
@@ -1030,7 +1030,7 @@
     height: 6
   - title: Top Policies
     name: Top Policies
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_pie
     fields: [requests.count, requests.jsonpayload_type_loadbalancerlogentry__enforcedsecuritypolicy__name]
@@ -1092,7 +1092,7 @@
     height: 6
   - title: Request Count and Response Size by Policy
     name: Request Count and Response Size by Policy
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.count, requests.jsonpayload_type_loadbalancerlogentry__enforcedsecuritypolicy__name,
@@ -1160,7 +1160,7 @@
     height: 5
   - title: Top Request Remote IPs by Requests
     name: Top Request Remote IPs by Requests
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.count, requests.http_request__remote_ip]
@@ -1238,7 +1238,7 @@
     height: 6
   - title: Request Count and Response Size by Remote IP
     name: Request Count and Response Size by Remote IP
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: looker_grid
     fields: [requests.http_request__remote_ip, requests.count, requests.sum_responseSize]
@@ -1314,7 +1314,7 @@
     height: 1
   - title: Denied Events
     name: Denied Events
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: single_value
     fields: [requests.count]
@@ -1403,7 +1403,7 @@
     height: 3
   - title: Total Events
     name: Total Events
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     type: single_value
     fields: [requests.count]
@@ -1514,7 +1514,7 @@
     ui_config:
       type: checkboxes
       display: popover
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     listens_to_filters: []
     field: requests.cache_hit_and_cache_miss
@@ -1528,7 +1528,7 @@
       type: relative_timeframes
       display: inline
       options: []
-    model: cloud_armor
+    model: cloud_armor_site_santo
     explore: requests
     listens_to_filters: []
     field: requests.receive_timestamp_date

@@ -1,5 +1,5 @@
 view: requests {
-  sql_table_name: `@{SCHEMA}.requests` ;;
+  sql_table_name: `@{SCHEMA}.requests_20250411` ;;
   view_label: "Requests"
 
   dimension: log_name {
